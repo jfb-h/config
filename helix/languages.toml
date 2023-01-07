@@ -1,0 +1,9 @@
+[[language]]
+name = "quarto-markdown"
+scope = "source.qmd"
+injection-regex = "(q|Q)md"
+file-types = ["qmd", "Qmd"]
+roots = []
+indent = { tab-width = 2, unit = "  " }
+grammar = "markdown"
+language-server = { command = "R", args = ["--slave", "-e", "languageserver::run()"] }
